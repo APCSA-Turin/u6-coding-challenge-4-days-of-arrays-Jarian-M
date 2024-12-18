@@ -29,13 +29,18 @@ public class Day3 {
 
     // Prints the snowflake  will be useful if tests fail (you will not be tested on this method)
     public static void printSnowflake(String[][] snowflake) {
-      System.out.println(snowflake);
+      for(int i = 0; i < snowflake.length; i++) {
+        for(int k = 0; k < snowflake.length; k++) {
+          System.out.print(snowflake[i][k]);
+        }
+        System.out.println();
+      }
     }
 
     // Test for the snowflake generation
     public static void main(String[] args) {
       int size = 5; // Small odd size
-      String[][] snowflake = Day3.generateSnowflake(size);
+      String[][] snowflake = generateSnowflake(size);
       printSnowflake(snowflake);
     }
 }
