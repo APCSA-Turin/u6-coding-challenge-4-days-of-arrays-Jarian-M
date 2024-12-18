@@ -11,7 +11,7 @@ public class Day1{
             Random ran = new Random();
             int rand = ran.nextInt(num);
             String elf = elf_names[rand];
-            return "Your elf name is: " + elf + " " + name;
+            return elf + " " + name;
         }  
     }
 }

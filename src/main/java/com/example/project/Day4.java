@@ -51,9 +51,11 @@ public class Day4 {
 
         Reindeer winner = null;
         for(Reindeer reindeer : reindeers) {
-            if(winner == null)
+            if(winner == null || reindeer.getDistanceTraveled() > winner.getDistanceTraveled()) {
+                winner = reindeer;
+            }
         }
-        return "name of winner";
+        return winner.getName();
     }
 
     

@@ -8,7 +8,7 @@ public class Day3 {
 
         String[][] grid = new String[size][size];
         for(int i = 0; i < size; i++) {
-          for(int j = 0; i < size; j++) {
+          for(int j = 0; j < size; j++) {
             grid[i][j] = " ";
           }
         }
